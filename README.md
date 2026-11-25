@@ -20,7 +20,7 @@ A simple music player built with **HTML, CSS, and JavaScript**. It allows users 
 
 1. Clone this repository:
    ```bash
-   git clone YOUR_REPOSITORY_LINK
+   (https://github.com/Kenny-dev-futa/Music-Player)
    ```
 2. Open the project folder.
 3. Open `index.html` in your browser.
