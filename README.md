@@ -1,4 +1,4 @@
-# ArchiWeb Music Player 🎵
+#Music Player 🎵
 
 A simple music player built with **HTML, CSS, and JavaScript**. It allows users to play and pause songs, navigate between tracks, and view song information through a playlist.
 
