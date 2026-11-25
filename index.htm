@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="author" content="Archiweb">
+  <meta name="author" content="Kehinde Mujeeb Adeyemo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="musicplayer.css" />
-  <title>
-    Build a Music Player App
-  </title>
+  <title>Build a Music Player App</title>
 </head>
 
 <body>
@@ -21,7 +18,7 @@
           <div></div>
           <div></div>
         </div>
-        <h1 class="fcc-title">ArchiWeb</h1>
+        <h1 class="fcc-title">Music Player</h1>
         <div class="parallel-lines">
           <div></div>
           <div></div>
@@ -29,8 +26,7 @@
       </div>
       <div class="player-content">
         <div id="player-album-art">
-          <img src="./music.png"
-            alt="song cover art" />
+        <img src="music.png" alt="song cover art"/>
         </div>
         <div class="player-display">
           <div class="player-display-song-artist">
@@ -62,6 +58,22 @@
               </svg>
             </button>
           </div>
+          <!-- Playback Progress -->
+<div class="progress-container">
+  <div class="time-display">
+    <span id="current-time">0:00</span>
+    <span id="duration">0:00</span>
+  </div>
+
+  <input type="range" id="progress-bar" min="0" max="100" value="0" aria-label="Song progress" />
+</div>
+
+<!-- Volume Control -->
+<div class="volume-container">
+  <span>🔊</span>
+
+  <input type="range" id="volume-slider" min="0" max="100" value="100" aria-label="Volume control" />
+</div>
         </div>
       </div>
     </div>
@@ -113,7 +125,7 @@
 
   <li id="song-4" class="playlist-song">
     <button class="playlist-song-info">
-       <span class="playlist-song-title">For The Rest Of My Life</span>
+      <span class="playlist-song-title">For The Rest Of My Life</span>
       <span class="playlist-song-artist">Maher Zain</span>
       <span class="playlist-song-duration">3:54</span>
     </button>
@@ -122,7 +134,11 @@
 
     </div>
   </div>
-  <script src="musicplayer.js"></script>
-</body>
 
+  <script src="musicplayer.js"></script>
+
+  <footer>&copy; 2026 Music Player. All rights reserved.
+    <p>Kehinde Mujeeb Adeyemo.</p>
+  </footer>
+</body>
 </html>
