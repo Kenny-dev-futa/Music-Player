@@ -53,10 +53,8 @@ const audio = new Audio();
 
 const formatTime = (time) => {
   if (!Number.isFinite(time)) return "0:00";
-
   const minutes = Math.floor(time / 60);
   const seconds = Math.floor(time % 60);
-
   return `${minutes}:${seconds.toString().padStart(2, "0")}`;
 };
 
@@ -115,20 +113,15 @@ const playPreviousSong = () => {
     playSong(userData.songs[0].id);
     return;
   }
-
   const nextSong = getNextSong();
-
   if (nextSong) {
     playSong(nextSong.id);
   } else {
     audio.pause();
     audio.currentTime = 0;
-
     userData.currentSong = null;
     userData.songCurrentTime = 0;
-
     playButton.classList.remove("playing");
-
     progressBar.value = 0;
     currentTimeDisplay.textContent = "0:00";
     durationDisplay.textContent = "0:00";
